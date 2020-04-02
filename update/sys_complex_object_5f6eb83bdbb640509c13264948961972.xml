@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD9b6eb83b38b64050d24ede05f384bb72</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>0f84e4e3db7600509c1326494896199b</scope_name>
+        <serialized_content>{"FlowDesigner:FD9b6eb83b38b64050d24ede05f384bb72":{},"FlowDesigner:FD9b6eb83b38b64050d24ede05f384bb72.$type_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9b6eb83b38b64050d24ede05f384bb72\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"default_value\":\"\",\"label\":\"requestbody\",\"mandatory\":\"true\",\"order\":\"2\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 00:01:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5f6eb83bdbb640509c13264948961972</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD9b6eb83b38b64050d24ede05f384bb72</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>sys_complex_object_5f6eb83bdbb640509c13264948961972</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 00:01:05</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="INSERT_OR_UPDATE">
+        <connection_type>http_connection</connection_type>
+        <id>x_snc_gc_speech_to.GCSpeechtotxt_CAC</id>
+        <multiple_connections>false</multiple_connections>
+        <name>GCSpeechtotxt_CAC</name>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-12 20:27:22</sys_created_on>
+        <sys_id>296d883bdbf240509c132649489619a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_gc_speech_to.GCSpeechtotxt_CAC</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>sys_alias_296d883bdbf240509c132649489619a1</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-12 20:27:22</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+</record_update>

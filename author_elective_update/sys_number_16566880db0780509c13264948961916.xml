@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_snc_gc_speech_to_st_audio_clips">x_snc_gc_speech_to_st_audio_clips</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>AUD</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 16:54:22</sys_created_on>
+        <sys_id>16566880db0780509c13264948961916</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AUD</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>sys_number_16566880db0780509c13264948961916</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 16:54:22</sys_updated_on>
+    </sys_number>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</application>
+        <file_path/>
+        <instance_id>0a5818abdb5ecfc4a874f897bf961996</instance_id>
+        <instance_name>empsush3</instance_name>
+        <name>sys_number_16566880db0780509c13264948961916</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="x_snc_gc_speech_to_st_audio_clips">x_snc_gc_speech_to_st_audio_clips</category><maximum_digits>7</maximum_digits><number>1000</number><prefix>AUD</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2020-02-13 16:54:22</sys_created_on><sys_id>16566880db0780509c13264948961916</sys_id><sys_mod_count>0</sys_mod_count><sys_name>AUD</sys_name><sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package><sys_policy/><sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope><sys_update_name>sys_number_16566880db0780509c13264948961916</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2020-02-13 16:54:22</sys_updated_on></sys_number></record_update>]]></payload>
+        <payload_hash>1945047551</payload_hash>
+        <record_name>AUD</record_name>
+        <reverted_from/>
+        <source>4384e4e3db7600509c1326494896199e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 16:54:22</sys_created_on>
+        <sys_id>e6566880db0780509c13264948961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1703f790e110000001</sys_recorded_at>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 16:54:22</sys_updated_on>
+        <type>Number</type>
+        <update_guid>22566880bc0780503ec4574c8dfaf142</update_guid>
+        <update_guid_history>22566880bc0780503ec4574c8dfaf142:1945047551</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 16:56:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>bf1dcbf7865448cc981bff365395ae90</sys_id>
+        <sys_metadata>16566880db0780509c13264948961916</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AUD</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_parent display_value="">4f162480db0780509c132649489619fc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_scope_delete display_value="">04e0b4a69d9641888650cca7ff1bdee4</sys_scope_delete>
+        <sys_update_name>sys_number_16566880db0780509c13264948961916</sys_update_name>
+        <sys_update_version display_value="sys_number_16566880db0780509c13264948961916">e6566880db0780509c13264948961942</sys_update_version>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 16:56:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

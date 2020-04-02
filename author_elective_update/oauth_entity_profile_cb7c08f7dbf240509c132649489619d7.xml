@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="DELETE">
+        <default>true</default>
+        <grant_type>password</grant_type>
+        <jwt_provider/>
+        <name>GCSpeechtotxt_OAuth_Provider default_profile</name>
+        <oauth_entity display_value="GCSpeechtotxt_OAuth_Provider">865c48f7dbf240509c1326494896198d</oauth_entity>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-12 20:22:53</sys_created_on>
+        <sys_id>cb7c08f7dbf240509c132649489619d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GCSpeechtotxt_OAuth_Provider default_profile</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>oauth_entity_profile_cb7c08f7dbf240509c132649489619d7</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-12 20:22:53</sys_updated_on>
+    </oauth_entity_profile>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</application>
+        <file_path/>
+        <instance_id>0a5818abdb5ecfc4a874f897bf961996</instance_id>
+        <instance_name>empsush3</instance_name>
+        <name>oauth_entity_profile_cb7c08f7dbf240509c132649489619d7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile"><oauth_entity_profile action="INSERT_OR_UPDATE"><default>true</default><grant_type>password</grant_type><jwt_provider/><name>GCSpeechtotxt_OAuth_Provider default_profile</name><oauth_entity display_value="GCSpeechtotxt_OAuth_Provider">865c48f7dbf240509c1326494896198d</oauth_entity><sys_class_name>oauth_entity_profile</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2020-02-12 20:22:53</sys_created_on><sys_id>cb7c08f7dbf240509c132649489619d7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GCSpeechtotxt_OAuth_Provider default_profile</sys_name><sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package><sys_policy/><sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope><sys_update_name>oauth_entity_profile_cb7c08f7dbf240509c132649489619d7</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2020-02-12 20:22:53</sys_updated_on></oauth_entity_profile></record_update>]]></payload>
+        <payload_hash>594848611</payload_hash>
+        <record_name>GCSpeechtotxt_OAuth_Provider default_profile</record_name>
+        <reverted_from/>
+        <source>4384e4e3db7600509c1326494896199e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-12 20:22:53</sys_created_on>
+        <sys_id>8f7c08f7dbf240509c132649489619d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1703b11959b0000001</sys_recorded_at>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-12 20:22:53</sys_updated_on>
+        <type>OAuth Entity Profile</type>
+        <update_guid>c77c08f787f24050fb52c77d1a25fcd9</update_guid>
+        <update_guid_history>c77c08f787f24050fb52c77d1a25fcd9:594848611</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="GCSpeechtotxt_OAuth_Provider default_profile">f78c4cf7dbf240509c13264948961928</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-12 20:23:13</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity_profile">oauth_entity_profile</sys_db_object>
+        <sys_id>d8410251c8d74e44851e5045c662e310</sys_id>
+        <sys_metadata>cb7c08f7dbf240509c132649489619d7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GCSpeechtotxt_OAuth_Provider default_profile</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_scope_delete display_value="">04e0b4a69d9641888650cca7ff1bdee4</sys_scope_delete>
+        <sys_update_name>oauth_entity_profile_cb7c08f7dbf240509c132649489619d7</sys_update_name>
+        <sys_update_version display_value="oauth_entity_profile_cb7c08f7dbf240509c132649489619d7">8f7c08f7dbf240509c132649489619d9</sys_update_version>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-12 20:23:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

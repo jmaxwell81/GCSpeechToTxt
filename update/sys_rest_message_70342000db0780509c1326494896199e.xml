@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>oauth2</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description/>
+        <name>Google Cloud text to Speech</name>
+        <oauth2_profile display_value="GCSpeechtotxt_OAuth_Provider default_profile">8aac4cf7dbf240509c132649489619b0</oauth2_profile>
+        <protocol_name/>
+        <rest_endpoint>https://speech.googleapis.com/v1/speech</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 16:45:26</sys_created_on>
+        <sys_id>70342000db0780509c1326494896199e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Google Cloud text to Speech</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>sys_rest_message_70342000db0780509c1326494896199e</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 16:45:42</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

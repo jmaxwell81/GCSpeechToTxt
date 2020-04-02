@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="DELETE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>0</auth_code_lifespan>
+        <auth_url>https://accounts.google.com/o/oauth2/v2/auth</auth_url>
+        <certificate_url/>
+        <client_id>478163488442-hp0u47fo7c3cvgig56071dar39j39ig9.apps.googleusercontent.com</client_id>
+        <client_secret>urSCOW49Yph/A+tfe87TPNMD+iaNySCUezGkmvhMoxg=</client_secret>
+        <client_uuid>7437e46fdb7600509c13264948961985</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments/>
+        <default_grant_type>authorization_code</default_grant_type>
+        <id_token_lifespan>0</id_token_lifespan>
+        <logo_url/>
+        <message_signature_lifespan>0</message_signature_lifespan>
+        <name>Google cloud</name>
+        <oauth_api_script/>
+        <protocol_name/>
+        <public_client>false</public_client>
+        <redirect_url>https://empsush3.service-now.com/oauth_redirect.do</redirect_url>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <revoke_token_url/>
+        <salt>0</salt>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-12 03:49:10</sys_created_on>
+        <sys_id>f437e46fdb7600509c13264948961985</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Google cloud</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>oauth_entity_f437e46fdb7600509c13264948961985</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-12 04:25:27</sys_updated_on>
+        <token_url>https://oauth2.googleapis.com/token</token_url>
+        <type>oauth_provider</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <user/>
+    </oauth_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</application>
+        <file_path/>
+        <instance_id>0a5818abdb5ecfc4a874f897bf961996</instance_id>
+        <instance_name>empsush3</instance_name>
+        <name>oauth_entity_f437e46fdb7600509c13264948961985</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity"><oauth_entity action="INSERT_OR_UPDATE"><access>public</access><access_token_lifespan>1800</access_token_lifespan><active>true</active><auth_code_lifespan>0</auth_code_lifespan><auth_url>https://accounts.google.com/o/oauth2/v2/auth</auth_url><certificate_url/><client_id>478163488442-hp0u47fo7c3cvgig56071dar39j39ig9.apps.googleusercontent.com</client_id><client_secret>urSCOW49Yph/A+tfe87TPNMD+iaNySCUezGkmvhMoxg=</client_secret><client_uuid>7437e46fdb7600509c13264948961985</client_uuid><code_challenge_method>S256</code_challenge_method><comments/><default_grant_type>authorization_code</default_grant_type><id_token_lifespan>0</id_token_lifespan><logo_url/><message_signature_lifespan>0</message_signature_lifespan><name>Google cloud</name><oauth_api_script/><protocol_name/><public_client>false</public_client><redirect_url>https://empsush3.service-now.com/oauth_redirect.do</redirect_url><refresh_token_lifespan>8640000</refresh_token_lifespan><refresh_token_url/><revoke_token_url/><salt>0</salt><send_client_credentials_as>request_body_parameter</send_client_credentials_as><skip_authorize>false</skip_authorize><sys_class_name>oauth_entity</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2020-02-12 03:49:10</sys_created_on><sys_id>f437e46fdb7600509c13264948961985</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Google cloud</sys_name><sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package><sys_policy/><sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope><sys_update_name>oauth_entity_f437e46fdb7600509c13264948961985</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2020-02-12 04:25:27</sys_updated_on><token_url>https://oauth2.googleapis.com/token</token_url><type>oauth_provider</type><use_mutual_auth>false</use_mutual_auth><user/></oauth_entity></record_update>]]></payload>
+        <payload_hash>-96934323</payload_hash>
+        <record_name>Google cloud</record_name>
+        <reverted_from/>
+        <source>4384e4e3db7600509c1326494896199e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-12 04:25:27</sys_created_on>
+        <sys_id>9e51b027dbb600509c1326494896193f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17037a508590000001</sys_recorded_at>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-12 04:25:27</sys_updated_on>
+        <type>Application Registries</type>
+        <update_guid>1a51b02745b6005068037e5ec1276d3f</update_guid>
+        <update_guid_history>1a51b02745b6005068037e5ec1276d3f:-96934323,838de0efb076005059cf50a54be150c9:2139776024,fa096caf927600507a042a00456018a6:597307619</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Google cloud">7669eb67db7240509c132649489619b5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-12 17:49:40</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity">oauth_entity</sys_db_object>
+        <sys_id>2b4cc84afee04e248a671b17d6b912f9</sys_id>
+        <sys_metadata>f437e46fdb7600509c13264948961985</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Google cloud</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_scope_delete display_value="">04e0b4a69d9641888650cca7ff1bdee4</sys_scope_delete>
+        <sys_update_name>oauth_entity_f437e46fdb7600509c13264948961985</sys_update_name>
+        <sys_update_version display_value="oauth_entity_f437e46fdb7600509c13264948961985">9e51b027dbb600509c1326494896193f</sys_update_version>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-12 17:49:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

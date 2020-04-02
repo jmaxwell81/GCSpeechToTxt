@@ -1,0 +1,2144 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>google_cloud_speech_to_text</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current","label":"Trigger➛Audio snippet Record","reference":"x_snc_gc_speech_to_audio_snipeet","reference_display":"Audio snippet","type":"reference","base_type":"reference"},{"name":"4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter","label":"1➛Attachment Records","reference":"sys_attachment","reference_display":"Attachment","type":"records","base_type":"records"},{"name":"4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter1","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer"},{"name":"Created_1.current","label":"Trigger➛Audio snippet Record","reference":"x_snc_gc_speech_to_audio_snipeet","reference_display":"Audio snippet","type":"reference","base_type":"reference"},{"name":"f51d7046-85f9-48e1-b03a-d728f4981e66.record","label":"3.1➛Audio snippet Record","reference":"x_snc_gc_speech_to_audio_snipeet","reference_display":"Audio snippet","type":"reference","base_type":"reference"},{"name":"f51d7046-85f9-48e1-b03a-d728f4981e66.table_name","label":"3.1➛Audio snippet Table","reference":"x_snc_gc_speech_to_audio_snipeet","reference_display":"Audio snippet","type":"table_name","base_type":"table_name"},{"name":"7b014ac5-08c2-4e58-bf9b-1e007e6d8787.item","label":"3.1➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference"},{"name":"dc5629ef-9b86-4165-bbd1-7eedc60443f8.record","label":"3.1.2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"dc5629ef-9b86-4165-bbd1-7eedc60443f8.table_name","label":"3.1.2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"34961fa5-63b8-4251-89f1-2a9ff6559c82.recofnizedtext","label":"3.1.1➛recognizedtext","type":"string","base_type":"string"},{"name":"34961fa5-63b8-4251-89f1-2a9ff6559c82.confidence","label":"3.1.1➛confidence","type":"string","base_type":"string"},{"name":"7b014ac5-08c2-4e58-bf9b-1e007e6d8787.item.sys_id","label":"3.1➛Attachment Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_attachment","column_name":"sys_id"}]</label_cache>
+        <latest_snapshot>a88d5e25db07485006d129574896196f</latest_snapshot>
+        <master_snapshot>841d4a5cdb4bc0509c1326494896193c</master_snapshot>
+        <name>Google cloud speech to text</name>
+        <outputs/>
+        <remote_trigger_id>601d4a5cdb4bc0509c13264948961989</remote_trigger_id>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:08:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b5a96484db0780509c13264948961967</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Google cloud speech to text</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>sys_hub_flow_b5a96484db0780509c13264948961967</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:20</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b5a96484db0780509c13264948961967"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b5a96484db0780509c13264948961967"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_gc_speech_to_audio_snipeet">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>601d4a5cdb4bc0509c13264948961989</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:39</sys_updated_on>
+        <table>x_snc_gc_speech_to_audio_snipeet</table>
+    </sys_flow_record_trigger>
+    <sys_hub_flow_component action="delete_multiple" query="flow=b5a96484db0780509c13264948961967^sys_idNOT IN283f6cc8db0780509c13264948961951,522ee888db0780509c132649489619ed,5d20b5ccdb0b80509c132649489619a1,9a2ee888db0780509c132649489619e4,a520b5ccdb0b80509c132649489619a6,bbea42d8db4bc0509c13264948961959"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:33:00</sys_created_on>
+        <sys_id>283f6cc8db0780509c13264948961951</sys_id>
+        <sys_mod_count>54</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:54</sys_updated_on>
+        <ui_id>45daabc3-31db-4bc1-9892-5486813e74ee</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=283f6cc8db0780509c13264948961951"/>
+    <sys_element_mapping action="delete_multiple" query="id=283f6cc8db0780509c13264948961951"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>283f6cc8db0780509c13264948961951</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:33:00</sys_created_on>
+        <sys_id>ac3f6cc8db0780509c13264948961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 17:33:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0e0ae8c2531003003bf1d9109ec587c8</table>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter1}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>283f6cc8db0780509c13264948961951</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:58:48</sys_created_on>
+        <sys_id>3a6c0e1cdb4bc0509c13264948961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:58:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter1}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">162ee888db0780509c132649489619ec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:29</sys_created_on>
+        <sys_id>522ee888db0780509c132649489619ed</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:20</sys_updated_on>
+        <ui_id>9b72c074-7032-4c54-a842-e18ad405dccf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=522ee888db0780509c132649489619ed"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>522ee888db0780509c132649489619ed</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:29</sys_created_on>
+        <sys_id>1a2ee888db0780509c132649489619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 17:28:29</sys_updated_on>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter1}}&gt;0</value>
+        <variable display_value="">9a5f5105c32632002841b63b12d3ae46</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>522ee888db0780509c132649489619ed</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:29</sys_created_on>
+        <sys_id>da2ee888db0780509c132649489619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 17:28:29</sys_updated_on>
+        <value>Attachment exist</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <order>3.1.2</order>
+        <parent_ui_id>7b014ac5-08c2-4e58-bf9b-1e007e6d8787</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>5d20b5ccdb0b80509c132649489619a1</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:54</sys_updated_on>
+        <ui_id>dc5629ef-9b86-4165-bbd1-7eedc60443f8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5d20b5ccdb0b80509c132649489619a1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5d20b5ccdb0b80509c132649489619a1</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>5120b5ccdb0b80509c132649489619a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:56:56</sys_updated_on>
+        <value/>
+        <variable display_value="">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5d20b5ccdb0b80509c132649489619a1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>5920b5ccdb0b80509c132649489619a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:52:18</sys_updated_on>
+        <value/>
+        <variable display_value="">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5d20b5ccdb0b80509c132649489619a1</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:27</sys_created_on>
+        <sys_id>f50d0a5cdb4bc0509c13264948961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:27</sys_updated_on>
+        <value>x_snc_gc_speech_to_audio_snipeet</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5d20b5ccdb0b80509c132649489619a1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5d20b5ccdb0b80509c132649489619a1</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>1520b5ccdb0b80509c132649489619a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:56:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5d20b5ccdb0b80509c132649489619a1</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:27</sys_created_on>
+        <sys_id>b10d0a5cdb4bc0509c13264948961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5d20b5ccdb0b80509c132649489619a1</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>5d20b5ccdb0b80509c132649489619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 22:16:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5d20b5ccdb0b80509c132649489619a1</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:27</sys_created_on>
+        <sys_id>fd0d0a5cdb4bc0509c13264948961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>5d20b5ccdb0b80509c132649489619a1</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>d520b5ccdb0b80509c132649489619a4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:56:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>5d20b5ccdb0b80509c132649489619a1</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:27</sys_created_on>
+        <sys_id>750d0a5cdb4bc0509c13264948961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>recognized_text={{34961fa5-63b8-4251-89f1-2a9ff6559c82.recofnizedtext}}^confidence={{34961fa5-63b8-4251-89f1-2a9ff6559c82.confidence}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Attachments on Record">082e70db0f4273003788001ea8767e02</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>082e70db0f4273003788001ea8767e02</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:29</sys_created_on>
+        <sys_id>9a2ee888db0780509c132649489619e4</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:54</sys_updated_on>
+        <ui_id>4e83905b-3205-4a7b-9ad8-0c5974dccd80</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9a2ee888db0780509c132649489619e4"/>
+    <sys_element_mapping action="delete_multiple" query="id=9a2ee888db0780509c132649489619e4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_record</field>
+        <id>9a2ee888db0780509c132649489619e4</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:58:48</sys_created_on>
+        <sys_id>be6c0e1cdb4bc0509c1326494896198f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:58:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_082e70db0f4273003788001ea8767e02</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_record</field>
+        <id>9a2ee888db0780509c132649489619e4</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:29</sys_created_on>
+        <sys_id>1e2ee888db0780509c132649489619e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:56:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_31de959973c93300a3942ea3c4f6a774</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e520b5ccdb0b80509c132649489619a5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3.1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>9b72c074-7032-4c54-a842-e18ad405dccf</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>a520b5ccdb0b80509c132649489619a6</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:20</sys_updated_on>
+        <ui_id>7b014ac5-08c2-4e58-bf9b-1e007e6d8787</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a520b5ccdb0b80509c132649489619a6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a520b5ccdb0b80509c132649489619a6</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>e120b5ccdb0b80509c132649489619a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 22:16:47</sys_updated_on>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter}}</value>
+        <variable display_value="">19df9109c32632002841b63b12d3aed6</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Google cloud speech to text script action">1889c658db4bc0509c1326494896191f</action_type>
+        <action_type_parent/>
+        <comment>This action calls the REST Message V2</comment>
+        <compiled_snapshot>1889c658db4bc0509c1326494896191f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <order>3.1.1</order>
+        <parent_ui_id>7b014ac5-08c2-4e58-bf9b-1e007e6d8787</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:52:18</sys_created_on>
+        <sys_id>bbea42d8db4bc0509c13264948961959</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:54</sys_updated_on>
+        <ui_id>34961fa5-63b8-4251-89f1-2a9ff6559c82</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bbea42d8db4bc0509c13264948961959"/>
+    <sys_element_mapping action="delete_multiple" query="id=bbea42d8db4bc0509c13264948961959"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_id</field>
+        <id>bbea42d8db4bc0509c13264948961959</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:58:48</sys_created_on>
+        <sys_id>326c0e1cdb4bc0509c13264948961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:58:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1889c658db4bc0509c1326494896191f</table>
+        <value>{{7b014ac5-08c2-4e58-bf9b-1e007e6d8787.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_id</field>
+        <id>bbea42d8db4bc0509c13264948961959</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:52:18</sys_created_on>
+        <sys_id>b3ea42d8db4bc0509c1326494896195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:52:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5f044ed0db4bc0509c13264948961951</table>
+        <value>{{7b014ac5-08c2-4e58-bf9b-1e007e6d8787.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b5a96484db0780509c13264948961967^sys_idNOT INa7fb061cdb4bc0509c1326494896195a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:56:55</sys_created_on>
+        <sys_id>a7fb061cdb4bc0509c1326494896195a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:20</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a7fb061cdb4bc0509c1326494896195a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a7fb061cdb4bc0509c1326494896195a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:56:55</sys_created_on>
+        <sys_id>23fb061cdb4bc0509c1326494896195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:56:55</sys_updated_on>
+        <value>x_snc_gc_speech_to_audio_snipeet</value>
+        <variable display_value="">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a7fb061cdb4bc0509c1326494896195a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:56:55</sys_created_on>
+        <sys_id>6ffb061cdb4bc0509c1326494896195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:56:55</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a7fb061cdb4bc0509c1326494896195a</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:59:49</sys_created_on>
+        <sys_id>bdacce1cdb4bc0509c132649489619b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:59:49</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b5a96484db0780509c13264948961967^sys_idNOT INbda96484db0780509c13264948961969"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b5a96484db0780509c13264948961967</id>
+        <name>Google cloud speech to text</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:08:48</sys_created_on>
+        <sys_id>bda96484db0780509c13264948961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 17:08:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=b5a96484db0780509c13264948961967^sys_idNOT IN462e6884db0780509c1326494896195d,8e2ee888db0780509c132649489619d9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</model>
+        <model_id>b5a96484db0780509c13264948961967</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b5a96484db0780509c13264948961967</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:28</sys_created_on>
+        <sys_id>462e6884db0780509c1326494896195d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</model>
+        <model_id>b5a96484db0780509c13264948961967</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_b5a96484db0780509c13264948961967</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:29</sys_created_on>
+        <sys_id>8e2ee888db0780509c132649489619d9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b5a96484db0780509c13264948961967^sys_idNOT IN283f6cc8db0780509c13264948961951,5d20b5ccdb0b80509c132649489619a1,9a2ee888db0780509c132649489619e4,bbea42d8db4bc0509c13264948961959"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:33:00</sys_created_on>
+        <sys_id>283f6cc8db0780509c13264948961951</sys_id>
+        <sys_mod_count>54</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:54</sys_updated_on>
+        <ui_id>45daabc3-31db-4bc1-9892-5486813e74ee</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=283f6cc8db0780509c13264948961951"/>
+    <sys_element_mapping action="delete_multiple" query="id=283f6cc8db0780509c13264948961951"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>283f6cc8db0780509c13264948961951</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:33:00</sys_created_on>
+        <sys_id>ac3f6cc8db0780509c13264948961952</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 17:33:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_0e0ae8c2531003003bf1d9109ec587c8</table>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter1}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>283f6cc8db0780509c13264948961951</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:58:48</sys_created_on>
+        <sys_id>3a6c0e1cdb4bc0509c13264948961991</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:58:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter1}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <order>3.1.2</order>
+        <parent_ui_id>7b014ac5-08c2-4e58-bf9b-1e007e6d8787</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>5d20b5ccdb0b80509c132649489619a1</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:54</sys_updated_on>
+        <ui_id>dc5629ef-9b86-4165-bbd1-7eedc60443f8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5d20b5ccdb0b80509c132649489619a1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5d20b5ccdb0b80509c132649489619a1</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>5120b5ccdb0b80509c132649489619a5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:56:56</sys_updated_on>
+        <value/>
+        <variable display_value="">1fd27c8cc3c632002841b63b12d3aeb9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5d20b5ccdb0b80509c132649489619a1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>5920b5ccdb0b80509c132649489619a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:52:18</sys_updated_on>
+        <value/>
+        <variable display_value="">e7d270ccc3c632002841b63b12d3ae8b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>5d20b5ccdb0b80509c132649489619a1</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:27</sys_created_on>
+        <sys_id>f50d0a5cdb4bc0509c13264948961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:27</sys_updated_on>
+        <value>x_snc_gc_speech_to_audio_snipeet</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5d20b5ccdb0b80509c132649489619a1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5d20b5ccdb0b80509c132649489619a1</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>1520b5ccdb0b80509c132649489619a4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:56:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>5d20b5ccdb0b80509c132649489619a1</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:27</sys_created_on>
+        <sys_id>b10d0a5cdb4bc0509c13264948961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5d20b5ccdb0b80509c132649489619a1</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>5d20b5ccdb0b80509c132649489619a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 22:16:47</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>5d20b5ccdb0b80509c132649489619a1</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:27</sys_created_on>
+        <sys_id>fd0d0a5cdb4bc0509c13264948961910</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>5d20b5ccdb0b80509c132649489619a1</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>d520b5ccdb0b80509c132649489619a4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:56:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_baf174c8c3c232002841b63b12d3aee4</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>5d20b5ccdb0b80509c132649489619a1</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:27</sys_created_on>
+        <sys_id>750d0a5cdb4bc0509c13264948961911</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>recognized_text={{34961fa5-63b8-4251-89f1-2a9ff6559c82.recofnizedtext}}^confidence={{34961fa5-63b8-4251-89f1-2a9ff6559c82.confidence}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5d20b5ccdb0b80509c132649489619a1^sys_idNOT IN5120b5ccdb0b80509c132649489619a3"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>values</input_name>
+        <instance>5d20b5ccdb0b80509c132649489619a1</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"recognized_text":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar attRec \u003d fd_data._3_1__for_each.item.getUniqueValue();\nvar gr \u003d new GlideRecord(\u0027sys_attachment\u0027);\ngr.addQuery(\u0027sys_id\u0027, attRec);\ngr.query();\nif(gr.next()){\nvar attachment \u003d new GlideSysAttachment();\nvar encodedAudio \u003d attachment.getContentBase64(gr);\nvar reqBody \u003d  {\n\t\"audio\" : {\n    \t\"content\" : encodedAudio\n      \n    },\n  \t\"config\":{\n   \t\t \"encoding\" : \"LINEAR16\",\n         \"sampleRateHertz\": 16000,\n      \t \"languageCode\" : \"en-US\"\n    }\n};\n\n\n\n\n var r \u003d new sn_ws.RESTMessageV2(\u0027x_snc_gc_speech_to.Google Cloud text to Speech\u0027, \u0027recognize\u0027);\n r.setRequestBody(JSON.stringify(reqBody));\n//override authentication profile \n//authentication type \u003d\u0027basic\u0027/ \u0027oauth2\u0027\n//r.setAuthenticationProfile(authentication type, profile name);\n\n//set a MID server name if one wants to run the message on MID\n//r.setMIDServer(\u0027MY_MID_SERVER\u0027);\n\n//if the message is configured to communicate through ECC queue, either\n//by setting a MID server or calling executeAsync, one needs to set skip_sensor\n//to true. Otherwise, one may get an intermittent error that the response body is null\n//r.setEccParameter(\u0027skip_sensor\u0027, true);\n\n var response \u003d r.execute();\n var responseBody \u003d response.getBody();\n var httpStatus \u003d response.getStatusCode();\n\n gs.info(JSON.stringify(responseBody));\n var repData \u003d responseBody.results[0].alternatives[0].transcript;\nreturn repData;\ngs.info(repData);\n}\n","savedValue":""}}</script>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>5120b5ccdb0b80509c132649489619a3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:52:18</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Attachments on Record">082e70db0f4273003788001ea8767e02</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>082e70db0f4273003788001ea8767e02</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:29</sys_created_on>
+        <sys_id>9a2ee888db0780509c132649489619e4</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:54</sys_updated_on>
+        <ui_id>4e83905b-3205-4a7b-9ad8-0c5974dccd80</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9a2ee888db0780509c132649489619e4"/>
+    <sys_element_mapping action="delete_multiple" query="id=9a2ee888db0780509c132649489619e4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_record</field>
+        <id>9a2ee888db0780509c132649489619e4</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:58:48</sys_created_on>
+        <sys_id>be6c0e1cdb4bc0509c1326494896198f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:58:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_082e70db0f4273003788001ea8767e02</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_record</field>
+        <id>9a2ee888db0780509c132649489619e4</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:29</sys_created_on>
+        <sys_id>1e2ee888db0780509c132649489619e6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:56:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_31de959973c93300a3942ea3c4f6a774</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Google cloud speech to text script action">1889c658db4bc0509c1326494896191f</action_type>
+        <action_type_parent/>
+        <comment>This action calls the REST Message V2</comment>
+        <compiled_snapshot>1889c658db4bc0509c1326494896191f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <order>3.1.1</order>
+        <parent_ui_id>7b014ac5-08c2-4e58-bf9b-1e007e6d8787</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:52:18</sys_created_on>
+        <sys_id>bbea42d8db4bc0509c13264948961959</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:54</sys_updated_on>
+        <ui_id>34961fa5-63b8-4251-89f1-2a9ff6559c82</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=bbea42d8db4bc0509c13264948961959"/>
+    <sys_element_mapping action="delete_multiple" query="id=bbea42d8db4bc0509c13264948961959"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_id</field>
+        <id>bbea42d8db4bc0509c13264948961959</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:58:48</sys_created_on>
+        <sys_id>326c0e1cdb4bc0509c13264948961993</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:58:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1889c658db4bc0509c1326494896191f</table>
+        <value>{{7b014ac5-08c2-4e58-bf9b-1e007e6d8787.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_id</field>
+        <id>bbea42d8db4bc0509c13264948961959</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:52:18</sys_created_on>
+        <sys_id>b3ea42d8db4bc0509c1326494896195b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:52:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5f044ed0db4bc0509c13264948961951</table>
+        <value>{{7b014ac5-08c2-4e58-bf9b-1e007e6d8787.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b5a96484db0780509c13264948961967^sys_idNOT IN522ee888db0780509c132649489619ed,a520b5ccdb0b80509c132649489619a6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">162ee888db0780509c132649489619ec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:29</sys_created_on>
+        <sys_id>522ee888db0780509c132649489619ed</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:20</sys_updated_on>
+        <ui_id>9b72c074-7032-4c54-a842-e18ad405dccf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=522ee888db0780509c132649489619ed"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>522ee888db0780509c132649489619ed</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:29</sys_created_on>
+        <sys_id>1a2ee888db0780509c132649489619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 17:28:29</sys_updated_on>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter1}}&gt;0</value>
+        <variable display_value="">9a5f5105c32632002841b63b12d3ae46</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>522ee888db0780509c132649489619ed</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:29</sys_created_on>
+        <sys_id>da2ee888db0780509c132649489619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 17:28:29</sys_updated_on>
+        <value>Attachment exist</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e520b5ccdb0b80509c132649489619a5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</flow>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3.1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>9b72c074-7032-4c54-a842-e18ad405dccf</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>a520b5ccdb0b80509c132649489619a6</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:20</sys_updated_on>
+        <ui_id>7b014ac5-08c2-4e58-bf9b-1e007e6d8787</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a520b5ccdb0b80509c132649489619a6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a520b5ccdb0b80509c132649489619a6</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:16:47</sys_created_on>
+        <sys_id>e120b5ccdb0b80509c132649489619a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 22:16:47</sys_updated_on>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter}}</value>
+        <variable display_value="">19df9109c32632002841b63b12d3aed6</variable>
+    </sys_variable_value>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_b5a96484db0780509c13264948961967^sys_idNOT IN822ee888db0780509c132649489619de,ce2ee888db0780509c132649489619d8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b5a96484db0780509c13264948961967</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:29</sys_created_on>
+        <sys_id>822ee888db0780509c132649489619de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_b5a96484db0780509c13264948961967_table_name_en</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 17:28:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b5a96484db0780509c13264948961967</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 17:28:28</sys_created_on>
+        <sys_id>ce2ee888db0780509c132649489619d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_b5a96484db0780509c13264948961967_current_en</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 17:28:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b5a96484db0780509c13264948961967^sys_idNOT INe81d4a5cdb4bc0509c13264948961989"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"e81d4a5cdb4bc0509c13264948961989","name":"plan"}}</plan>
+        <plan_id>b5a96484db0780509c13264948961967</plan_id>
+        <snapshot>a88d5e25db07485006d129574896196f</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e81d4a5cdb4bc0509c13264948961989</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:20</sys_updated_on>
+        <trigger display_value="">601d4a5cdb4bc0509c13264948961989</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>google_cloud_speech_to_text</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current","label":"Trigger➛Audio snippet Record","reference":"x_snc_gc_speech_to_audio_snipeet","reference_display":"Audio snippet","type":"reference","base_type":"reference"},{"name":"4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter","label":"1➛Attachment Records","reference":"sys_attachment","reference_display":"Attachment","type":"records","base_type":"records"},{"name":"4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter1","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer"},{"name":"Created_1.current","label":"Trigger➛Audio snippet Record","reference":"x_snc_gc_speech_to_audio_snipeet","reference_display":"Audio snippet","type":"reference","base_type":"reference"},{"name":"f51d7046-85f9-48e1-b03a-d728f4981e66.record","label":"3.1➛Audio snippet Record","reference":"x_snc_gc_speech_to_audio_snipeet","reference_display":"Audio snippet","type":"reference","base_type":"reference"},{"name":"f51d7046-85f9-48e1-b03a-d728f4981e66.table_name","label":"3.1➛Audio snippet Table","reference":"x_snc_gc_speech_to_audio_snipeet","reference_display":"Audio snippet","type":"table_name","base_type":"table_name"},{"name":"7b014ac5-08c2-4e58-bf9b-1e007e6d8787.item","label":"3.1➛Attachment Record","reference":"sys_attachment","reference_display":"Attachment","type":"reference","base_type":"reference"},{"name":"dc5629ef-9b86-4165-bbd1-7eedc60443f8.record","label":"3.1.2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"dc5629ef-9b86-4165-bbd1-7eedc60443f8.table_name","label":"3.1.2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"34961fa5-63b8-4251-89f1-2a9ff6559c82.recofnizedtext","label":"3.1.1➛recognizedtext","type":"string","base_type":"string"},{"name":"34961fa5-63b8-4251-89f1-2a9ff6559c82.confidence","label":"3.1.1➛confidence","type":"string","base_type":"string"},{"name":"7b014ac5-08c2-4e58-bf9b-1e007e6d8787.item.sys_id","label":"3.1➛Attachment Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_attachment","column_name":"sys_id"}]</label_cache>
+        <master>true</master>
+        <name>Google cloud speech to text</name>
+        <outputs/>
+        <parent_flow display_value="Google cloud speech to text">b5a96484db0780509c13264948961967</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>841d4a5cdb4bc0509c1326494896193c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=841d4a5cdb4bc0509c1326494896193c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=841d4a5cdb4bc0509c1326494896193c"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=841d4a5cdb4bc0509c1326494896193c^sys_idNOT IN141d4a5cdb4bc0509c1326494896195f,141d4a5cdb4bc0509c13264948961962,181d4a5cdb4bc0509c13264948961968,541d4a5cdb4bc0509c13264948961965,5c1d4a5cdb4bc0509c1326494896195a,d41d4a5cdb4bc0509c13264948961958"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Attachments on Record">082e70db0f4273003788001ea8767e02</action_type>
+        <action_type_parent display_value="Get Attachments on Record">31de959973c93300a3942ea3c4f6a774</action_type_parent>
+        <comment/>
+        <compiled_snapshot>082e70db0f4273003788001ea8767e02</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>141d4a5cdb4bc0509c1326494896195f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <ui_id>4e83905b-3205-4a7b-9ad8-0c5974dccd80</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=141d4a5cdb4bc0509c1326494896195f"/>
+    <sys_element_mapping action="delete_multiple" query="id=141d4a5cdb4bc0509c1326494896195f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_record</field>
+        <id>141d4a5cdb4bc0509c1326494896195f</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>d41d4a5cdb4bc0509c13264948961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_082e70db0f4273003788001ea8767e02</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>141d4a5cdb4bc0509c13264948961962</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <ui_id>45daabc3-31db-4bc1-9892-5486813e74ee</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=141d4a5cdb4bc0509c13264948961962"/>
+    <sys_element_mapping action="delete_multiple" query="id=141d4a5cdb4bc0509c13264948961962"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>141d4a5cdb4bc0509c13264948961962</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>d01d4a5cdb4bc0509c13264948961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter1}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <order>3.1.2</order>
+        <parent_ui_id>7b014ac5-08c2-4e58-bf9b-1e007e6d8787</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>181d4a5cdb4bc0509c13264948961968</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <ui_id>dc5629ef-9b86-4165-bbd1-7eedc60443f8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=181d4a5cdb4bc0509c13264948961968"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>181d4a5cdb4bc0509c13264948961968</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>181d4a5cdb4bc0509c1326494896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <value>x_snc_gc_speech_to_audio_snipeet</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=181d4a5cdb4bc0509c13264948961968"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>181d4a5cdb4bc0509c13264948961968</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>d01d4a5cdb4bc0509c1326494896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>181d4a5cdb4bc0509c13264948961968</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>101d4a5cdb4bc0509c1326494896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>181d4a5cdb4bc0509c13264948961968</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>941d4a5cdb4bc0509c1326494896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>recognized_text={{34961fa5-63b8-4251-89f1-2a9ff6559c82.recofnizedtext}}^confidence={{34961fa5-63b8-4251-89f1-2a9ff6559c82.confidence}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Google cloud speech to text script action">1889c658db4bc0509c1326494896191f</action_type>
+        <action_type_parent display_value="Google cloud speech to text script action">5f044ed0db4bc0509c13264948961951</action_type_parent>
+        <comment>This action calls the REST Message V2</comment>
+        <compiled_snapshot>1889c658db4bc0509c1326494896191f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <order>3.1.1</order>
+        <parent_ui_id>7b014ac5-08c2-4e58-bf9b-1e007e6d8787</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>541d4a5cdb4bc0509c13264948961965</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <ui_id>34961fa5-63b8-4251-89f1-2a9ff6559c82</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=541d4a5cdb4bc0509c13264948961965"/>
+    <sys_element_mapping action="delete_multiple" query="id=541d4a5cdb4bc0509c13264948961965"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_id</field>
+        <id>541d4a5cdb4bc0509c13264948961965</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>901d4a5cdb4bc0509c13264948961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1889c658db4bc0509c1326494896191f</table>
+        <value>{{7b014ac5-08c2-4e58-bf9b-1e007e6d8787.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">162ee888db0780509c132649489619ec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>5c1d4a5cdb4bc0509c1326494896195a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <ui_id>9b72c074-7032-4c54-a842-e18ad405dccf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5c1d4a5cdb4bc0509c1326494896195a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5c1d4a5cdb4bc0509c1326494896195a</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>181d4a5cdb4bc0509c1326494896195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:37</sys_updated_on>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter1}}&gt;0</value>
+        <variable display_value="">9a5f5105c32632002841b63b12d3ae46</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5c1d4a5cdb4bc0509c1326494896195a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>d81d4a5cdb4bc0509c1326494896195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:37</sys_updated_on>
+        <value>Attachment exist</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e520b5ccdb0b80509c132649489619a5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3.1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>9b72c074-7032-4c54-a842-e18ad405dccf</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>d41d4a5cdb4bc0509c13264948961958</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <ui_id>7b014ac5-08c2-4e58-bf9b-1e007e6d8787</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d41d4a5cdb4bc0509c13264948961958"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>d41d4a5cdb4bc0509c13264948961958</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>d01d4a5cdb4bc0509c1326494896195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:37</sys_updated_on>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter}}</value>
+        <variable display_value="">19df9109c32632002841b63b12d3aed6</variable>
+    </sys_variable_value>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=841d4a5cdb4bc0509c1326494896193c^sys_idNOT IN1c1d4a5cdb4bc0509c1326494896196a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>1c1d4a5cdb4bc0509c1326494896196a</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:20</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1c1d4a5cdb4bc0509c1326494896196a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1c1d4a5cdb4bc0509c1326494896196a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>141d4a5cdb4bc0509c1326494896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <value>x_snc_gc_speech_to_audio_snipeet</value>
+        <variable display_value="">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1c1d4a5cdb4bc0509c1326494896196a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>501d4a5cdb4bc0509c1326494896196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>1c1d4a5cdb4bc0509c1326494896196a</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>9c1d4a5cdb4bc0509c1326494896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=841d4a5cdb4bc0509c1326494896193c^sys_idNOT IN8c1d4a5cdb4bc0509c1326494896193c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>841d4a5cdb4bc0509c1326494896193c</id>
+        <name>Google cloud speech to text</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>8c1d4a5cdb4bc0509c1326494896193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:37</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=841d4a5cdb4bc0509c1326494896193c^sys_idNOT IN581d4a5cdb4bc0509c1326494896194f,901d4a5cdb4bc0509c1326494896193e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</model>
+        <model_id>841d4a5cdb4bc0509c1326494896193c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_841d4a5cdb4bc0509c1326494896193c</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>581d4a5cdb4bc0509c1326494896194f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</model>
+        <model_id>841d4a5cdb4bc0509c1326494896193c</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_841d4a5cdb4bc0509c1326494896193c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>901d4a5cdb4bc0509c1326494896193e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=841d4a5cdb4bc0509c1326494896193c^sys_idNOT IN141d4a5cdb4bc0509c1326494896195f,141d4a5cdb4bc0509c13264948961962,181d4a5cdb4bc0509c13264948961968,541d4a5cdb4bc0509c13264948961965"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Attachments on Record">082e70db0f4273003788001ea8767e02</action_type>
+        <action_type_parent display_value="Get Attachments on Record">31de959973c93300a3942ea3c4f6a774</action_type_parent>
+        <comment/>
+        <compiled_snapshot>082e70db0f4273003788001ea8767e02</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>141d4a5cdb4bc0509c1326494896195f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <ui_id>4e83905b-3205-4a7b-9ad8-0c5974dccd80</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=141d4a5cdb4bc0509c1326494896195f"/>
+    <sys_element_mapping action="delete_multiple" query="id=141d4a5cdb4bc0509c1326494896195f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_record</field>
+        <id>141d4a5cdb4bc0509c1326494896195f</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>d41d4a5cdb4bc0509c13264948961960</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_082e70db0f4273003788001ea8767e02</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>141d4a5cdb4bc0509c13264948961962</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <ui_id>45daabc3-31db-4bc1-9892-5486813e74ee</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=141d4a5cdb4bc0509c13264948961962"/>
+    <sys_element_mapping action="delete_multiple" query="id=141d4a5cdb4bc0509c13264948961962"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>log_message</field>
+        <id>141d4a5cdb4bc0509c13264948961962</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>d01d4a5cdb4bc0509c13264948961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter1}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <order>3.1.2</order>
+        <parent_ui_id>7b014ac5-08c2-4e58-bf9b-1e007e6d8787</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>181d4a5cdb4bc0509c13264948961968</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <ui_id>dc5629ef-9b86-4165-bbd1-7eedc60443f8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=181d4a5cdb4bc0509c13264948961968"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>181d4a5cdb4bc0509c13264948961968</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>181d4a5cdb4bc0509c1326494896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <value>x_snc_gc_speech_to_audio_snipeet</value>
+        <variable display_value="">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=181d4a5cdb4bc0509c13264948961968"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>181d4a5cdb4bc0509c13264948961968</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>d01d4a5cdb4bc0509c1326494896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Created or Updated_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>181d4a5cdb4bc0509c13264948961968</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>101d4a5cdb4bc0509c1326494896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>181d4a5cdb4bc0509c13264948961968</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>941d4a5cdb4bc0509c1326494896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>recognized_text={{34961fa5-63b8-4251-89f1-2a9ff6559c82.recofnizedtext}}^confidence={{34961fa5-63b8-4251-89f1-2a9ff6559c82.confidence}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=181d4a5cdb4bc0509c13264948961968^sys_idNOT IN181d4a5cdb4bc0509c13264948961969"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>values</input_name>
+        <instance>181d4a5cdb4bc0509c13264948961968</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"recognized_text":{"scriptActive":false,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nvar attRec \u003d fd_data._3_1__for_each.item.getUniqueValue();\nvar gr \u003d new GlideRecord(\u0027sys_attachment\u0027);\ngr.addQuery(\u0027sys_id\u0027, attRec);\ngr.query();\nif(gr.next()){\nvar attachment \u003d new GlideSysAttachment();\nvar encodedAudio \u003d attachment.getContentBase64(gr);\nvar reqBody \u003d  {\n\t\"audio\" : {\n    \t\"content\" : encodedAudio\n      \n    },\n  \t\"config\":{\n   \t\t \"encoding\" : \"LINEAR16\",\n         \"sampleRateHertz\": 16000,\n      \t \"languageCode\" : \"en-US\"\n    }\n};\n\n\n\n\n var r \u003d new sn_ws.RESTMessageV2(\u0027x_snc_gc_speech_to.Google Cloud text to Speech\u0027, \u0027recognize\u0027);\n r.setRequestBody(JSON.stringify(reqBody));\n//override authentication profile \n//authentication type \u003d\u0027basic\u0027/ \u0027oauth2\u0027\n//r.setAuthenticationProfile(authentication type, profile name);\n\n//set a MID server name if one wants to run the message on MID\n//r.setMIDServer(\u0027MY_MID_SERVER\u0027);\n\n//if the message is configured to communicate through ECC queue, either\n//by setting a MID server or calling executeAsync, one needs to set skip_sensor\n//to true. Otherwise, one may get an intermittent error that the response body is null\n//r.setEccParameter(\u0027skip_sensor\u0027, true);\n\n var response \u003d r.execute();\n var responseBody \u003d response.getBody();\n var httpStatus \u003d response.getStatusCode();\n\n gs.info(JSON.stringify(responseBody));\n var repData \u003d responseBody.results[0].alternatives[0].transcript;\nreturn repData;\ngs.info(repData);\n}\n","savedValue":""}}</script>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>181d4a5cdb4bc0509c13264948961969</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Google cloud speech to text script action">1889c658db4bc0509c1326494896191f</action_type>
+        <action_type_parent display_value="Google cloud speech to text script action">5f044ed0db4bc0509c13264948961951</action_type_parent>
+        <comment>This action calls the REST Message V2</comment>
+        <compiled_snapshot>1889c658db4bc0509c1326494896191f</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <order>3.1.1</order>
+        <parent_ui_id>7b014ac5-08c2-4e58-bf9b-1e007e6d8787</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>541d4a5cdb4bc0509c13264948961965</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <ui_id>34961fa5-63b8-4251-89f1-2a9ff6559c82</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=541d4a5cdb4bc0509c13264948961965"/>
+    <sys_element_mapping action="delete_multiple" query="id=541d4a5cdb4bc0509c13264948961965"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>attachment_id</field>
+        <id>541d4a5cdb4bc0509c13264948961965</id>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:38</sys_created_on>
+        <sys_id>901d4a5cdb4bc0509c13264948961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1889c658db4bc0509c1326494896191f</table>
+        <value>{{7b014ac5-08c2-4e58-bf9b-1e007e6d8787.item.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=841d4a5cdb4bc0509c1326494896193c^sys_idNOT IN5c1d4a5cdb4bc0509c1326494896195a,d41d4a5cdb4bc0509c13264948961958"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">162ee888db0780509c132649489619ec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>5c1d4a5cdb4bc0509c1326494896195a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <ui_id>9b72c074-7032-4c54-a842-e18ad405dccf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5c1d4a5cdb4bc0509c1326494896195a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5c1d4a5cdb4bc0509c1326494896195a</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>181d4a5cdb4bc0509c1326494896195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:37</sys_updated_on>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter1}}&gt;0</value>
+        <variable display_value="">9a5f5105c32632002841b63b12d3ae46</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5c1d4a5cdb4bc0509c1326494896195a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>d81d4a5cdb4bc0509c1326494896195c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:37</sys_updated_on>
+        <value>Attachment exist</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e520b5ccdb0b80509c132649489619a5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Google cloud speech to text">841d4a5cdb4bc0509c1326494896193c</flow>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3.1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>9b72c074-7032-4c54-a842-e18ad405dccf</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>d41d4a5cdb4bc0509c13264948961958</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-18 17:25:19</sys_updated_on>
+        <ui_id>7b014ac5-08c2-4e58-bf9b-1e007e6d8787</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d41d4a5cdb4bc0509c13264948961958"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>d41d4a5cdb4bc0509c13264948961958</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>d01d4a5cdb4bc0509c1326494896195a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:37</sys_updated_on>
+        <value>{{4e83905b-3205-4a7b-9ad8-0c5974dccd80.parameter}}</value>
+        <variable display_value="">19df9109c32632002841b63b12d3aed6</variable>
+    </sys_variable_value>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_841d4a5cdb4bc0509c1326494896193c^sys_idNOT IN901d4a5cdb4bc0509c13264948961954,dc1d4a5cdb4bc0509c13264948961942"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_841d4a5cdb4bc0509c1326494896193c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>901d4a5cdb4bc0509c13264948961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Table Name</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_841d4a5cdb4bc0509c1326494896193c_table_name_en</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_841d4a5cdb4bc0509c1326494896193c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:01:37</sys_created_on>
+        <sys_id>dc1d4a5cdb4bc0509c13264948961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_841d4a5cdb4bc0509c1326494896193c_current_en</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:01:37</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+</record_update>

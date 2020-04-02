@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="DELETE">
+        <default>true</default>
+        <grant_type>authorization_code</grant_type>
+        <jwt_provider/>
+        <name>Google cloud default_profile</name>
+        <oauth_entity display_value="Google cloud">f437e46fdb7600509c13264948961985</oauth_entity>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-12 03:49:10</sys_created_on>
+        <sys_id>7e096cafdb7600509c132649489619a3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Google cloud default_profile</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>oauth_entity_profile_7e096cafdb7600509c132649489619a3</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-12 04:09:26</sys_updated_on>
+    </oauth_entity_profile>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</application>
+        <file_path/>
+        <instance_id>0a5818abdb5ecfc4a874f897bf961996</instance_id>
+        <instance_name>empsush3</instance_name>
+        <name>oauth_entity_profile_7e096cafdb7600509c132649489619a3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile"><oauth_entity_profile action="INSERT_OR_UPDATE"><default>true</default><grant_type>authorization_code</grant_type><jwt_provider/><name>Google cloud default_profile</name><oauth_entity display_value="Google cloud">f437e46fdb7600509c13264948961985</oauth_entity><sys_class_name>oauth_entity_profile</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2020-02-12 03:49:10</sys_created_on><sys_id>7e096cafdb7600509c132649489619a3</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Google cloud default_profile</sys_name><sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package><sys_policy/><sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope><sys_update_name>oauth_entity_profile_7e096cafdb7600509c132649489619a3</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2020-02-12 04:09:26</sys_updated_on></oauth_entity_profile></record_update>]]></payload>
+        <payload_hash>677157324</payload_hash>
+        <record_name>Google cloud default_profile</record_name>
+        <reverted_from/>
+        <source>4384e4e3db7600509c1326494896199e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-12 04:09:26</sys_created_on>
+        <sys_id>ebadec63dbb600509c1326494896192a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17037965d520000001</sys_recorded_at>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-12 04:09:26</sys_updated_on>
+        <type>OAuth Entity Profile</type>
+        <update_guid>67adec63a9b6005091f59547b33a7a2a</update_guid>
+        <update_guid_history>67adec63a9b6005091f59547b33a7a2a:677157324,7a096cafaf760050a0705c94c82d25a5:-799981673</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Google cloud default_profile">3c69eb67db7240509c1326494896191e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-12 17:49:32</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity_profile">oauth_entity_profile</sys_db_object>
+        <sys_id>95ddc9843f6e44a09f4d84ab68222400</sys_id>
+        <sys_metadata>7e096cafdb7600509c132649489619a3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Google cloud default_profile</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_scope_delete display_value="">04e0b4a69d9641888650cca7ff1bdee4</sys_scope_delete>
+        <sys_update_name>oauth_entity_profile_7e096cafdb7600509c132649489619a3</sys_update_name>
+        <sys_update_version display_value="oauth_entity_profile_7e096cafdb7600509c132649489619a3">ebadec63dbb600509c1326494896192a</sys_update_version>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-12 17:49:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

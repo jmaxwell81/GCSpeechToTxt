@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_gc_speech_to_audio_snipeet</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Get text from audio</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+var gr = new GlideRecord('sys_attachment');
+gr.addQuery('table_sys_id', current.getUniqueValue());
+gr.query();
+if(gr.next()){
+var attachment = new GlideSysAttachment();
+var encodedAudio = attachment.getContentBase64(gr);
+var reqBody =  {
+	"audio" : {
+    	"content" : encodedAudio
+      
+    },
+  	"config":{
+   		 "encoding" : "LINEAR16",
+         
+      	 "languageCode" : "en-US"
+		
+    }
+};
+
+
+
+
+ var r = new sn_ws.RESTMessageV2('x_snc_gc_speech_to.Google Cloud text to Speech', 'recognize');
+ r.setRequestBody(JSON.stringify(reqBody));
+//override authentication profile 
+//authentication type ='basic'/ 'oauth2'
+//r.setAuthenticationProfile(authentication type, profile name);
+
+//set a MID server name if one wants to run the message on MID
+//r.setMIDServer('MY_MID_SERVER');
+
+//if the message is configured to communicate through ECC queue, either
+//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+//to true. Otherwise, one may get an intermittent error that the response body is null
+//r.setEccParameter('skip_sensor', true);
+
+ var response = r.execute();
+ var responseBody = response.getBody();
+ var httpStatus = response.getStatusCode();
+
+ gs.info(JSON.stringify(responseBody));
+ var repData = JSON.parse(responseBody);
+current.recognized_text = repData.results[0].alternatives[0].transcript;
+	current.confidence = repData.results[0].alternatives[0].confidence;
+	current.update()
+gs.info(repData);
+}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 22:52:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>72487dc4db4b80509c132649489619a8</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Get text from audio</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>sys_script_72487dc4db4b80509c132649489619a8</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:53:30</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=72487dc4db4b80509c132649489619a8"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</application>
+        <file_path/>
+        <instance_id>0a5818abdb5ecfc4a874f897bf961996</instance_id>
+        <instance_name>empsush3</instance_name>
+        <name>sys_script_72487dc4db4b80509c132649489619a8</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;false&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_snc_gc_speech_to_audio_snipeet&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Get text from audio&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	// Add your code here
+var gr = new GlideRecord('sys_attachment');
+gr.addQuery('table_sys_id', current.getUniqueValue());
+gr.query();
+if(gr.next()){
+var attachment = new GlideSysAttachment();
+var encodedAudio = attachment.getContentBase64(gr);
+var reqBody =  {
+	"audio" : {
+    	"content" : encodedAudio
+      
+    },
+  	"config":{
+   		 "encoding" : "LINEAR16",
+         
+      	 "languageCode" : "en-US"
+		
+    }
+};
+
+
+
+
+ var r = new sn_ws.RESTMessageV2('x_snc_gc_speech_to.Google Cloud text to Speech', 'recognize');
+ r.setRequestBody(JSON.stringify(reqBody));
+//override authentication profile 
+//authentication type ='basic'/ 'oauth2'
+//r.setAuthenticationProfile(authentication type, profile name);
+
+//set a MID server name if one wants to run the message on MID
+//r.setMIDServer('MY_MID_SERVER');
+
+//if the message is configured to communicate through ECC queue, either
+//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+//to true. Otherwise, one may get an intermittent error that the response body is null
+//r.setEccParameter('skip_sensor', true);
+
+ var response = r.execute();
+ var responseBody = response.getBody();
+ var httpStatus = response.getStatusCode();
+
+ gs.info(JSON.stringify(responseBody));
+ var repData = JSON.parse(responseBody);
+current.recognized_text = repData.results[0].alternatives[0].transcript;
+	current.confidence = repData.results[0].alternatives[0].confidence;
+	current.update()
+gs.info(repData);
+}
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sush.chan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-02-13 22:52:55&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;72487dc4db4b80509c132649489619a8&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Get text from audio&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to"&gt;0f84e4e3db7600509c1326494896199b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="GC Speech to Txt Spoke"&gt;0f84e4e3db7600509c1326494896199b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_72487dc4db4b80509c132649489619a8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sush.chan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-02-14 18:53:30&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=72487dc4db4b80509c132649489619a8"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1754527113</payload_hash>
+        <record_name>Get text from audio</record_name>
+        <reverted_from/>
+        <source>4384e4e3db7600509c1326494896199e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 18:53:30</sys_created_on>
+        <sys_id>913b86d8db4bc0509c1326494896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>170450c79600000001</sys_recorded_at>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 18:53:30</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>993b86d83b4bc0501f69e66fc09c146a</update_guid>
+        <update_guid_history>993b86d83b4bc0501f69e66fc09c146a:-1754527113,d6045a803fcb8050783df7fa07b0ca0a:450378436,2fe39680d7cb8050cf142f14709f0e87:704212037,7383da40accb8050bf83d276592b1f59:-455432971,f4311ecc3c8b805080c44e4cc004a632:1921145861,02630a80848b8050e9fc65fe186594a1:548878041,32b24e40ce8b8050e5e91f507261f299:1244958071,f3624a40a18b805023d4b0772e3d4c1b:2026417152,636971481e4b8050c37f14b552a67cb4:1355005800,96397d08ec4b8050d33b359aa6d31ad1:1211000673,aa68fdc4114b805045fc2504166bccb8:-1019172119</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-14 19:23:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>26d05cda15e0428c89ddf3f59060dac1</sys_id>
+        <sys_metadata>72487dc4db4b80509c132649489619a8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get text from audio</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_parent display_value="Audio snippet">daf6e4c0db0780509c1326494896197e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_scope_delete display_value="">04e0b4a69d9641888650cca7ff1bdee4</sys_scope_delete>
+        <sys_update_name>sys_script_72487dc4db4b80509c132649489619a8</sys_update_name>
+        <sys_update_version display_value="sys_script_72487dc4db4b80509c132649489619a8">913b86d8db4bc0509c1326494896196b</sys_update_version>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-14 19:23:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

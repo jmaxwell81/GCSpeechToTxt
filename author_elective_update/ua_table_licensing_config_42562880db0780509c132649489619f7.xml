@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="DELETE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_snc_gc_speech_to_st_audio_clips</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 16:54:20</sys_created_on>
+        <sys_id>42562880db0780509c132649489619f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_gc_speech_to_st_audio_clips</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>ua_table_licensing_config_42562880db0780509c132649489619f7</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 16:54:20</sys_updated_on>
+    </ua_table_licensing_config>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</application>
+        <file_path/>
+        <instance_id>0a5818abdb5ecfc4a874f897bf961996</instance_id>
+        <instance_name>empsush3</instance_name>
+        <name>ua_table_licensing_config_42562880db0780509c132649489619f7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config"><ua_table_licensing_config action="INSERT_OR_UPDATE"><is_fulfillment>false</is_fulfillment><license_condition/><license_model>none</license_model><license_roles/><name>x_snc_gc_speech_to_st_audio_clips</name><op_delete>true</op_delete><op_insert>true</op_insert><op_update>true</op_update><owner_condition/><sys_class_name>ua_table_licensing_config</sys_class_name><sys_created_by>sush.chan</sys_created_by><sys_created_on>2020-02-13 16:54:20</sys_created_on><sys_id>42562880db0780509c132649489619f7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_gc_speech_to_st_audio_clips</sys_name><sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package><sys_policy/><sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope><sys_update_name>ua_table_licensing_config_42562880db0780509c132649489619f7</sys_update_name><sys_updated_by>sush.chan</sys_updated_by><sys_updated_on>2020-02-13 16:54:20</sys_updated_on></ua_table_licensing_config></record_update>]]></payload>
+        <payload_hash>863280403</payload_hash>
+        <record_name>x_snc_gc_speech_to_st_audio_clips</record_name>
+        <reverted_from/>
+        <source>4384e4e3db7600509c1326494896199e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 16:54:20</sys_created_on>
+        <sys_id>c2562880db0780509c132649489619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1703f79061e0000001</sys_recorded_at>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 16:54:20</sys_updated_on>
+        <type>Table Subscription Configuration</type>
+        <update_guid>0e56288048078050ea0a3152b26d43f8</update_guid>
+        <update_guid_history>0e56288048078050ea0a3152b26d43f8:863280403</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-13 16:56:51</sys_created_on>
+        <sys_db_object display_value="" name="ua_table_licensing_config">ua_table_licensing_config</sys_db_object>
+        <sys_id>5c0410acf3f14f6cb023738bdf6b7cc1</sys_id>
+        <sys_metadata>42562880db0780509c132649489619f7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_gc_speech_to_st_audio_clips</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_scope_delete display_value="">04e0b4a69d9641888650cca7ff1bdee4</sys_scope_delete>
+        <sys_update_name>ua_table_licensing_config_42562880db0780509c132649489619f7</sys_update_name>
+        <sys_update_version display_value="ua_table_licensing_config_42562880db0780509c132649489619f7">c2562880db0780509c132649489619f9</sys_update_version>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-13 16:56:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

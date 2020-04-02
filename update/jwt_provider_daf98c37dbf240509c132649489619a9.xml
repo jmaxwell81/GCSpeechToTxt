@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="jwt_provider">
+    <jwt_provider action="INSERT_OR_UPDATE">
+        <expiry_interval>60</expiry_interval>
+        <jwt_api_script/>
+        <jwt_keystore_alias display_value="GCSpeechtotxt JWT Key">6ab9c437dbf240509c13264948961920</jwt_keystore_alias>
+        <name>GCSpeechtotxt_JWT_Provider</name>
+        <sys_class_name>jwt_provider</sys_class_name>
+        <sys_created_by>sush.chan</sys_created_by>
+        <sys_created_on>2020-02-12 20:13:13</sys_created_on>
+        <sys_id>daf98c37dbf240509c132649489619a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GCSpeechtotxt_JWT_Provider</sys_name>
+        <sys_package display_value="GC Speech to Txt Spoke" source="x_snc_gc_speech_to">0f84e4e3db7600509c1326494896199b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GC Speech to Txt Spoke">0f84e4e3db7600509c1326494896199b</sys_scope>
+        <sys_update_name>jwt_provider_daf98c37dbf240509c132649489619a9</sys_update_name>
+        <sys_updated_by>sush.chan</sys_updated_by>
+        <sys_updated_on>2020-02-12 20:13:13</sys_updated_on>
+    </jwt_provider>
+</record_update>

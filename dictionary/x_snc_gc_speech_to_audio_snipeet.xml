@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Audio snippet" max_length="40" name="x_snc_gc_speech_to_audio_snipeet" type="collection">
+        <element label="Base64 Encoded Audio" max_length="100000" name="base64_encoded_audio" type="string"/>
+        <element label="Confidence" max_length="40" name="confidence" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Recognized text" max_length="1000" name="recognized_text" type="string"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
